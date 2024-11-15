@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import Button from './Button';
-import { RainbowButton } from "@/components/ui/rainbow-button";
+
 
 export default function Header() {
   
