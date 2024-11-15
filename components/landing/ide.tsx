@@ -5,7 +5,6 @@ import Link from "next/link";
 export default function SupportedIDEs() {
   return (
     <div className="relative py-20 text-white overflow-hidden">
-      {/* Imagen de fondo */}
       <div className="absolute bottom-0 left-0 w-[50vw] h-full">
         <div
           className="w-full h-full bg-cover "
@@ -28,13 +27,12 @@ export default function SupportedIDEs() {
 
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
           <div className="relative p-6 border border-neutral-800 rounded-lg bg-neutral-900/50 backdrop-blur-lg">
-            {/* Elementos decorativos de "+" */}
+
             <div className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 text-blue-500 text-xl font-bold">+</div>
             <div className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 text-blue-500 text-xl font-bold">+</div>
             <div className="absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2 text-blue-500 text-xl font-bold">+</div>
             <div className="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 text-blue-500 text-xl font-bold">+</div>
 
-            {/* Lista de iconos de IDEs */}
             <div className="flex flex-wrap gap-6 sm:gap-8 lg:gap-10 items-center justify-center border-b border-neutral-800 py-4">
               <Link href={"https://marketplace.visualstudio.com/items?itemName=vlanguage.vscode-vlang"} target="_blank">
                 <Image className="hover:rotate-2 hover:scale-110 transition-transform " src={"/ide/vscode.svg"} width={40} height={40} alt="VSCode" />

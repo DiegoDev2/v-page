@@ -3,33 +3,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-const detectOS = () => {
-  if (typeof window !== "undefined") {
-    const platform = navigator.platform.toLowerCase();
-    const userAgent = navigator.userAgent.toLowerCase();
-
-    if (platform.includes("mac")) {
-      if (userAgent.includes("intel mac os")) return "Download for macOS (Intel)";
-      if (userAgent.includes("arm") || userAgent.includes("apple silicon")) return "Download for macOS (Apple Silicon)";
-      return "Download for macOS";
-    }
-    if (platform.includes("win")) return "Download for Windows";
-    if (platform.includes("linux")) return "Download for Linux";
-  }
-  return "Unknown";
-};
 
 export default function LandingPage() {
-  const [selectedOS, setSelectedOS] = useState("");
-
-  useEffect(() => {
-    const detectedOS = detectOS();
-    setSelectedOS(detectedOS);
-  }, []);
 
   return (
     <div className="relative flex flex-col py-20 text-white overflow-hidden">
-      {/* Fondo de cuadrícula con el efecto de luz azul */}
       <div className="absolute inset-0 z-[-1]">
         <div className="background-base w-full h-full absolute top-0 left-0 z-[-1]">
           <div
@@ -57,7 +35,6 @@ export default function LandingPage() {
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto space-y-12 lg:space-y-0 lg:space-x-12 flex flex-col py-20 lg:flex-row items-center justify-between">
-        {/* Contenido del landing page */}
         <div className="flex-1 space-y-6 text-center lg:text-left">
           <h1 className="text-5xl sm:text-6xl lg:text-7xl py-2 font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
             The V Programming <br /> Language
@@ -77,8 +54,6 @@ export default function LandingPage() {
             </Link>
           </div>
         </div>
-
-        {/* Imagen del Veasel encima del bloque de código */}
         <div className="flex-1 relative w-full max-w-lg">
           <Image
             src={"/veasel.png"}
