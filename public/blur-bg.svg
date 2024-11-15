@@ -16,14 +16,15 @@
       <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
       <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_180_8288"/>
     </filter>
+    <!-- Color update for the first gradient -->
     <linearGradient id="paint0_linear_180_8288" x1="610" y1="0" x2="610" y2="820" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#E0F7FA" stop-opacity="0"/> <!-- Light blue at the start -->
-      <stop offset="0.355" stop-color="#4FC3F7" stop-opacity="0.2"/> <!-- Mid-tone blue in the middle -->
-      <stop offset="0.805" stop-color="#01579B" stop-opacity="0.4"/> <!-- Dark blue at the end -->
+      <stop stop-color="#EAE7D7" /> <!-- Updated light color -->
+      <stop offset="1" stop-color="#056565" /> <!-- Updated dark color -->
     </linearGradient>
+    <!-- Color update for the second gradient -->
     <linearGradient id="paint1_linear_180_8288" x1="610" y1="379" x2="610" y2="938" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#E1F5FE" stop-opacity="0"/> <!-- Light blue at the top -->
-      <stop offset="1" stop-color="#0288D1"/> <!-- Medium blue at the bottom -->
+      <stop stop-color="#EAE7D7" /> <!-- Updated light color -->
+      <stop offset="1" stop-color="#056565" /> <!-- Updated dark color -->
     </linearGradient>
   </defs>
 </svg>

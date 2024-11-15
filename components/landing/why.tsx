@@ -2,8 +2,18 @@ import React from 'react';
 
 export default function WhyVLang() {
   return (
-    <div className="py-20 text-white bg-black">
-      <div className="max-w-7xl mx-auto px-16">
+    <div className="py-20 text-white relative">
+      <div className="absolute bottom-20 right-0 w-[50vw] h-screen">
+        <div
+          className="w-full h-full bg-cover bg-right opacity-80"
+          style={{
+            background: "url('./grain-blur.svg') no-repeat",
+            maskImage: 'linear-gradient( black 70%, transparent)',
+          }}
+        />
+      </div>
+      
+      <div className="relative max-w-7xl mx-auto px-16 z-10">
         <h2 className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-neutral-50 to-neutral-400 py-3">
           Why V Programming Language?
         </h2>
@@ -24,9 +34,9 @@ export default function WhyVLang() {
   );
 }
 
-function FeatureCard({ title, description }: { title: string; description: string }) {
+function FeatureCard({ title, description } : { title: string, description: string }) {
   return (
-    <div className="relative p-6 border border-neutral-800">
+    <div className="relative p-6 border border-neutral-800 bg-neutral-900/50 backdrop-blur-lg">
       <div className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 text-blue-500 text-xl font-bold">+</div>
       <div className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 text-blue-500 text-xl font-bold">+</div>
       <div className="absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2 text-blue-500 text-xl font-bold">+</div>

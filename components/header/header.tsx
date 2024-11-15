@@ -1,8 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import Button from './Button';
+import { RainbowButton } from "@/components/ui/rainbow-button";
 
 export default function Header() {
+  
   return (
     <header className="fixed right-0 bg-black/50 backdrop-blur-xl border left-0 top-0 py-2 px-4 z-[100] border-neutral-900 transition-colors duration-300 border-b-none">
       <div className="flex items-center justify-between max-w-[1900px] mx-auto">
@@ -33,43 +35,13 @@ export default function Header() {
                   <li>
                     <button className="group inline-flex h-9 w-max items-center underline-offset-4 underline-green-500 justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:underline focus:underline">
                       Features
-                      <svg
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="relative top-[1px] ml-1 h-3 w-3 transition duration-300"
-                        aria-hidden="true"
-                      >
-                        <path
-                          d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
+                  
                     </button>
                   </li>
                   <li>
                     <button className="group inline-flex h-9 w-max items-center underline-offset-4 underline-green-500 justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:underline focus:underline">
                       Examples
-                      <svg
-                        width="15"
-                        height="15"
-                        viewBox="0 0 15 15"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="relative top-[1px] ml-1 h-3 w-3 transition duration-300"
-                        aria-hidden="true"
-                      >
-                        <path
-                          d="M3.13523 6.15803C3.3241 5.95657 3.64052 5.94637 3.84197 6.13523L7.5 9.56464L11.158 6.13523C11.3595 5.94637 11.6759 5.95657 11.8648 6.15803C12.0536 6.35949 12.0434 6.67591 11.842 6.86477L7.84197 10.6148C7.64964 10.7951 7.35036 10.7951 7.15803 10.6148L3.15803 6.86477C2.95657 6.67591 2.94637 6.35949 3.13523 6.15803Z"
-                          fill="currentColor"
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
+                     
                     </button>
                   </li>
                   <li>
@@ -94,7 +66,8 @@ export default function Header() {
         </div>
 
         <aside className="flex items-center">
-          <Link href="/dashboard" className="">
+         
+          <Link href="" className="">
             <Button/>
           </Link>
         </aside>
