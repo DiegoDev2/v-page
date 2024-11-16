@@ -7,7 +7,7 @@ export default function LandingPage() {
   return (
     <div className="relative flex flex-col py-20 text-white overflow-hidden">
       <div className="absolute inset-0 z-[-1]">
-        <div className="background-base w-full h-full absolute top-0 left-0 z-[-1]">
+        <div className="background-base animate-background-shine w-full h-full absolute top-0 left-0 z-[-1]">
           <div
             className="grid-bg bg-cover bg-center w-full h-full"
             style={{
@@ -33,8 +33,8 @@ export default function LandingPage() {
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto space-y-12 lg:space-y-0 lg:space-x-12 flex flex-col py-20 lg:flex-row items-center justify-between">
-        <div className="flex-1 space-y-6 text-center lg:text-left">
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl py-2 font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+        <div className="flex-1 animate-fade-up space-y-6 text-center lg:text-left">
+          <h1 className="text-5xl  sm:text-6xl lg:text-7xl py-2 font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
             The V Programming <br /> Language
           </h1>
           <p className="text-base sm:text-lg lg:text-xl text-gray-300">
@@ -58,7 +58,7 @@ export default function LandingPage() {
             width={200}
             height={200}
             alt={"Download code"}
-            className="absolute bottom-[320px] left-1/2 transform -translate-x-1/2 z-20"
+            className="absolute animate-fade-up bottom-[320px] left-1/2 transform -translate-x-1/2 z-20"
           />
           <div className="rounded-lg p-6 overflow-hidden bg-zinc-900 text-white mt-20 relative">
             <pre className="text-xs sm:text-xs">
