@@ -1,4 +1,3 @@
-import { hr } from "framer-motion/client";
 import Image from "next/image";
 export default () => {
 
