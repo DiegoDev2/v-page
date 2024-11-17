@@ -1,6 +1,6 @@
 import Image from "next/image";
-export default () => {
 
+const Footer = () => {
     const footerNavs = [
         {
             href: 'https://twitch.tv/v_language',
@@ -58,3 +58,7 @@ export default () => {
         </footer>
     );
 }
+
+Footer.displayName = "Footer";
+
+export default Footer; 
