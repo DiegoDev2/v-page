@@ -1,4 +1,5 @@
 import Header from "@/components/header/header";
+import Collaborators from "@/components/landing/contributors";
 import SupportedIDEs from "@/components/landing/ide";
 import LandingPage from "@/components/landing/landing";
 import Why from "@/components/landing/why";
@@ -12,6 +13,7 @@ export default function Home() {
     <Why />
     <SupportedIDEs />
     <Sponsors />
+    <Collaborators />
     </>
     
   );

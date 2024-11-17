@@ -97,7 +97,6 @@ export function MarqueeDemo() {
         ))}
       </Marquee>
 
-      {/* Gradientes laterales */}
       <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-dark from-black"></div>
       <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-dark from-black"></div>
     </div>
