@@ -7,7 +7,7 @@ export default function SupportedIDEs() {
     <div className="relative py-20 text-white overflow-hidden">
       <div className="absolute bottom-0 left-0 w-[50vw] h-full">
         <div
-          className="w-full h-full bg-cover "
+          className="w-full h-full bg-cover hidden sm:block"
           style={{
             background: "url('./small-blur.svg') no-repeat",
             backgroundPosition: "left top",

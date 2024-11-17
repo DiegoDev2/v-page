@@ -1,3 +1,4 @@
+import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/header";
 import Collaborators from "@/components/landing/contributors";
 import SupportedIDEs from "@/components/landing/ide";
@@ -14,6 +15,7 @@ export default function Home() {
     <SupportedIDEs />
     <Sponsors />
     <Collaborators />
+    <Footer />
     </>
     
   );
